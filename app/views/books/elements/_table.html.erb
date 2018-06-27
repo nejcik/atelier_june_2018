@@ -1,4 +1,4 @@
-<main class="main-content">
+<div class='x-books-table-container'>
   <h2>Books</h2>
   <table>
     <thead>
@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <% @books.each do |book| %>
+      <% books.each do |book| %>
         <tr>
           <td><%= book.title %></td>
           <td><%= book.isbn %></td>
@@ -22,4 +22,4 @@
     <i class="fa fa-plus-circle"></i>
     add book
   <% end %>
-</main>
+</div>

@@ -29,7 +29,7 @@ class BooksController < ApplicationController
 
   private
 
-	def filter_arams
+	def filter_params
 		permitted_params.slice(:title, :isbn)
 										.merge(category.present? ? { category_id: category.id } : {})
 										.reject{ |k, v| v.to_s.empty? }
